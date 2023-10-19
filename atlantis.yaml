@@ -5,22 +5,22 @@ parallel_plan: true
 parallel_apply: true
 abort_on_execution_order_fail: true
 projects:
-  - name: "Project 1"
+  - name: Project1
     branch: /main/
     dir: ./project_1
 
-  - name: "Project 2"
+  - name: Project2
     branch: /main/
     dir: ./project_2
 
-  - name: "Project 3"
+  - name: Project3
     branch: /main/
     dir: ./project_3
 
-  - name: "Project 4"
+  - name: Project4
     branch: /main/
     dir: ./project_4
 
-  - name: "Project 5"
+  - name: Project5
     branch: /main/
     dir: ./project_5
