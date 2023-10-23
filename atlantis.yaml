@@ -16,6 +16,8 @@ projects:
   - name: Project3
     branch: /main/
     dir: ./project_3
+    autoplan:
+      when_modified: ["../modules/**/*.tf", "*.tf*", ".terraform.lock.hcl"]
 
   - name: Project4
     branch: /main/
