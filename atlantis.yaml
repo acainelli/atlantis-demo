@@ -8,21 +8,26 @@ projects:
   - name: Project1
     branch: /main/
     dir: ./project_1
+    apply_requirements: [approved]
 
   - name: Project2
     branch: /main/
     dir: ./project_2
+    apply_requirements: [approved]
 
   - name: Project3
     branch: /main/
     dir: ./project_3
     autoplan:
       when_modified: ["../modules/**/*.tf", "*.tf*", ".terraform.lock.hcl"]
+    apply_requirements: [approved]
 
   - name: Project4
     branch: /main/
     dir: ./project_4
+    apply_requirements: [approved]
 
   - name: Project5
     branch: /main/
     dir: ./project_5
+    apply_requirements: [approved]
