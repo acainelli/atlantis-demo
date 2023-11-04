@@ -10,108 +10,111 @@ projects:
     dir: template
     autoplan:
       enabled: true
+      when_modified:
+        - "./modules/outputs/*.tf"
+        - "**/*.tf"
 
   - <<: *template
     name: audi-q5
-    dir: ./repository/integromat-demo/audi-q5
+    dir: ./repository/integromat-demo/audi-q5/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: bmw-3-series
-    dir: ./repository/integromat-demo/bmw-3-series
+    dir: ./repository/integromat-demo/bmw-3-series/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: chevrolet-corvette
-    dir: ./repository/integromat-demo/chevrolet-corvette
+    dir: ./repository/integromat-demo/chevrolet-corvette/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: dodge-charger
-    dir: ./repository/integromat-demo/dodge-charger
+    dir: ./repository/integromat-demo/dodge-charger/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: ford-mustang
-    dir: ./repository/integromat-demo/ford-mustang
+    dir: ./repository/integromat-demo/ford-mustang/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: honda-civic
-    dir: ./repository/integromat-demo/honda-civic
+    dir: ./repository/integromat-demo/honda-civic/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: hyundai-sonata
-    dir: ./repository/integromat-demo/hyundai-sonata
+    dir: ./repository/integromat-demo/hyundai-sonata/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: jeep-wrangler
-    dir: ./repository/integromat-demo/jeep-wrangler
+    dir: ./repository/integromat-demo/jeep-wrangler/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: mercedes-benz-e-class
-    dir: ./repository/integromat-demo/mercedes-benz-e-class
+    dir: ./repository/integromat-demo/mercedes-benz-e-class/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: nissan-altima
-    dir: ./repository/integromat-demo/nissan-altima
+    dir: ./repository/integromat-demo/nissan-altima/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: porsche-911
-    dir: ./repository/integromat-demo/porsche-911
+    dir: ./repository/integromat-demo/porsche-911/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: subaru-outback
-    dir: ./repository/integromat-demo/subaru-outback
+    dir: ./repository/integromat-demo/subaru-outback/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: tesla-model-3
-    dir: ./repository/integromat-demo/tesla-model-3
+    dir: ./repository/integromat-demo/tesla-model-3/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-electric-car/*.tf"
 
   - <<: *template
     name: toyota-camry
-    dir: ./repository/integromat-demo/toyota-camry
+    dir: ./repository/integromat-demo/toyota-camry/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: volkswagen-golf
-    dir: ./repository/integromat-demo/volkswagen-golf
+    dir: ./repository/integromat-demo/volkswagen-golf/terraform
     autoplan:
       when_modified:
         - "./modules/outputs-petrol-car/*.tf"
