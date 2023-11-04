@@ -17,9 +17,6 @@ projects:
   - <<: *template
     name: audi-q5
     dir: ./repository/integromat-demo/audi-q5/terraform
-    autoplan:
-      when_modified:
-        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: bmw-3-series
