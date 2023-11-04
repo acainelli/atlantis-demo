@@ -1,0 +1,75 @@
+version: 3
+automerge: false
+delete_source_branch_on_merge: true
+parallel_plan: true
+parallel_apply: true
+abort_on_execution_order_fail: true
+projects:
+  - &template
+    name: template
+    dir: template
+    autoplan:
+      enabled: true
+      when_modified:
+        - "./modules/**/*.tf"
+        - "**/*.tf"
+
+  - <<: *template
+    name: audi-q5
+    dir: ./repository/integromat-demo/audi-q5
+
+  - <<: *template
+    name: bmw-3-series
+    dir: ./repository/integromat-demo/bmw-3-series
+
+  - <<: *template
+    name: chevrolet-corvette
+    dir: ./repository/integromat-demo/chevrolet-corvette
+
+  - <<: *template
+    name: dodge-charger
+    dir: ./repository/integromat-demo/dodge-charger
+
+  - <<: *template
+    name: ford-mustang
+    dir: ./repository/integromat-demo/ford-mustang
+
+  - <<: *template
+    name: honda-civic
+    dir: ./repository/integromat-demo/honda-civic
+
+  - <<: *template
+    name: hyundai-sonata
+    dir: ./repository/integromat-demo/hyundai-sonata
+
+  - <<: *template
+    name: jeep-wrangler
+    dir: ./repository/integromat-demo/jeep-wrangler
+
+  - <<: *template
+    name: mercedes-benz-e-class
+    dir: ./repository/integromat-demo/mercedes-benz-e-class
+
+  - <<: *template
+    name: nissan-altima
+    dir: ./repository/integromat-demo/nissan-altima
+
+  - <<: *template
+    name: porsche-911
+    dir: ./repository/integromat-demo/porsche-911
+
+  - <<: *template
+    name: subaru-outback
+    dir: ./repository/integromat-demo/subaru-outback
+
+  - <<: *template
+    name: tesla-model-3
+    dir: ./repository/integromat-demo/tesla-model-3
+
+  - <<: *template
+    name: toyota-camry
+    dir: ./repository/integromat-demo/toyota-camry
+
+  - <<: *template
+    name: volkswagen-golf
+    dir: ./repository/integromat-demo/volkswagen-golf
