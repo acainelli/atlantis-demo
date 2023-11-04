@@ -17,89 +17,104 @@ projects:
   - <<: *template
     name: audi-q5
     dir: ./repository/integromat-demo/audi-q5
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: bmw-3-series
     dir: ./repository/integromat-demo/bmw-3-series
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: chevrolet-corvette
     dir: ./repository/integromat-demo/chevrolet-corvette
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: dodge-charger
     dir: ./repository/integromat-demo/dodge-charger
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: ford-mustang
     dir: ./repository/integromat-demo/ford-mustang
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: honda-civic
     dir: ./repository/integromat-demo/honda-civic
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: hyundai-sonata
     dir: ./repository/integromat-demo/hyundai-sonata
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: jeep-wrangler
     dir: ./repository/integromat-demo/jeep-wrangler
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: mercedes-benz-e-class
     dir: ./repository/integromat-demo/mercedes-benz-e-class
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: nissan-altima
     dir: ./repository/integromat-demo/nissan-altima
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: porsche-911
     dir: ./repository/integromat-demo/porsche-911
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: subaru-outback
     dir: ./repository/integromat-demo/subaru-outback
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: tesla-model-3
     dir: ./repository/integromat-demo/tesla-model-3
-    when_modified:
-      - "./modules/outputs-electric-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-electric-car/*.tf"
 
   - <<: *template
     name: toyota-camry
     dir: ./repository/integromat-demo/toyota-camry
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
 
   - <<: *template
     name: volkswagen-golf
     dir: ./repository/integromat-demo/volkswagen-golf
-    when_modified:
-      - "./modules/outputs-petrol-car/*.tf"
+    autoplan:
+      when_modified:
+        - "./modules/outputs-petrol-car/*.tf"
