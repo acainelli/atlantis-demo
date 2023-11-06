@@ -10,9 +10,8 @@ projects:
     dir: template
     autoplan:
       enabled: true
-      when_modified:
-#        - "./modules/**/*.tf"
-        - "repository/integromat-demo/**/terraform/*.tf"
+      #when_modified:
+        #- "./modules/**/*.tf"
 
   - <<: *template
     name: audi-q5
