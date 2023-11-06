@@ -12,7 +12,7 @@ projects:
       enabled: true
       when_modified:
         - "./modules/**/*.tf"
-        - "**/*.tf"
+        - "**/**/*.tf"
 
   - <<: *template
     name: audi-q5
