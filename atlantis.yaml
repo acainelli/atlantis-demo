@@ -12,7 +12,7 @@ projects:
       enabled: true
       when_modified:
         - "./modules/**/*.tf"
-z
+
   - <<: *template
     name: audi-q5
     dir: ./repository/integromat-demo/audi-q5/terraform
