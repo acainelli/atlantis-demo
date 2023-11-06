@@ -1,4 +1,8 @@
 module "carname" {
-  source       = "../../../../demo/modules/outputs"
-  project_name = var.project_name
+  source   = "../../../../modules/output-carname"
+  car_name = var.project_name
+}
+
+output "module_output_example" {
+  value = module.carname.simple_value
 }
