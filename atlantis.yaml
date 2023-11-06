@@ -8,8 +8,8 @@ projects:
   - &template
     name: template
     dir: template
-    autoplan:
-      enabled: true
+    #autoplan:
+    #  enabled: true
       #when_modified:
         #- "./modules/**/*.tf"
 
