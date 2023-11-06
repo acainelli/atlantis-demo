@@ -11,7 +11,7 @@ projects:
     autoplan:
       enabled: true
       when_modified:
-        - "./modules/**/*.tf"
+#        - "./modules/**/*.tf"
         - "repository/integromat-demo/**/terraform/*.tf"
 
   - <<: *template
