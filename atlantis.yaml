@@ -10,8 +10,9 @@ projects:
     dir: template
     autoplan:
       enabled: true
-      #when_modified:
-        #- "./modules/**/*.tf"
+      when_modified:
+        - "../../../../modules/**/*.tf"
+        - "./*.tf"
 
   - <<: *template
     name: audi-q5
