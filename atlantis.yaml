@@ -8,14 +8,17 @@ projects:
   - &template
     name: template
     dir: template
-    #autoplan:
-    #  enabled: true
-      #when_modified:
-        #- "./modules/**/*.tf"
+    autoplan:
+      enabled: true
+      when_modified:
+        - "./*.tf"
 
   - <<: *template
     name: audi-q5
     dir: ./repository/integromat-demo/audi-q5/terraform
+    autoplan:
+      when_modified:
+        - "../../../../modules/output-carname/*.tf"
 
   - <<: *template
     name: bmw-3-series
@@ -36,10 +39,16 @@ projects:
   - <<: *template
     name: honda-civic
     dir: ./repository/integromat-demo/honda-civic/terraform
+    autoplan:
+      when_modified:
+        - "../../../../modules/output-carname/*.tf"
 
   - <<: *template
     name: hyundai-sonata
     dir: ./repository/integromat-demo/hyundai-sonata/terraform
+    autoplan:
+      when_modified:
+        - "../../../../modules/output-carname/*.tf"
 
   - <<: *template
     name: jeep-wrangler
@@ -52,6 +61,9 @@ projects:
   - <<: *template
     name: nissan-altima
     dir: ./repository/integromat-demo/nissan-altima/terraform
+    autoplan:
+      when_modified:
+        - "../../../../modules/output-carname/*.tf"
 
   - <<: *template
     name: porsche-911
@@ -64,6 +76,9 @@ projects:
   - <<: *template
     name: tesla-model-3
     dir: ./repository/integromat-demo/tesla-model-3/terraform
+    autoplan:
+      when_modified:
+        - "../../../../modules/output-carname/*.tf"
 
   - <<: *template
     name: toyota-camry
