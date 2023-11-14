@@ -17,7 +17,6 @@ projects:
     name: audi-q5
     dir: ./repository/integromat-demo/audi-q5/terraform
     autoplan:
-      enabled: true
       when_modified:
         - "../../../../modules/output-carname/*.tf"
 
@@ -41,7 +40,6 @@ projects:
     name: honda-civic
     dir: ./repository/integromat-demo/honda-civic/terraform
     autoplan:
-      enabled: true
       when_modified:
         - "../../../../modules/output-carname/*.tf"
 
@@ -49,7 +47,6 @@ projects:
     name: hyundai-sonata
     dir: ./repository/integromat-demo/hyundai-sonata/terraform
     autoplan:
-      enabled: true
       when_modified:
         - "../../../../modules/output-carname/*.tf"
 
@@ -65,7 +62,6 @@ projects:
     name: nissan-altima
     dir: ./repository/integromat-demo/nissan-altima/terraform
     autoplan:
-      enabled: true
       when_modified:
         - "../../../../modules/output-carname/*.tf"
 
@@ -81,7 +77,6 @@ projects:
     name: tesla-model-3
     dir: ./repository/integromat-demo/tesla-model-3/terraform
     autoplan:
-      enabled: true
       when_modified:
         - "../../../../modules/output-carname/*.tf"
 
